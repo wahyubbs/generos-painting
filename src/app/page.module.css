@@ -1,229 +1,322 @@
-.main {
+.container-bbs {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+  gap: 2rem;
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
+.card-bbs {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
   width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
 }
 
-.description a {
+.card-bbs h1 {
+  color: #2a2d53;
+  font-family: "Arial", Sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
+}
+
+.image-wrapper-bbs {
+  margin: 0 auto;
+  width: 580px !important;
+  height: auto !important;
+}
+.medium-image-wrapper-bbs {
+  margin: 0 auto;
+  width: 580px !important;
+  height: auto !important;
+}
+
+.widget-bbs {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.widget-bbs .widget-header-bbs {
+  margin: 0 auto;
+  width: 70%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+}
+.widget-bbs .widget-header-bbs img {
+  width: 390px !important;
+}
+.widget-bbs .widget-body-bbs {
+  margin-top: -40px;
+  width: 70%;
+}
+.widget-bbs .widget-bodyDes-bbs {
+  margin-top: -10px;
+  width: 70%;
 }
 
-.description p {
+.widget-bbs .widget-body-bbs .widget-title-bbs {
   position: relative;
-  margin: 0;
+  background-color: transparent;
+
+  width: 70%;
+  margin: 0 auto;
+  background-image: radial-gradient(at top right, #ff713e 71%, #ffe465 100%);
+  border-style: solid;
+  border-color: #ff0000;
+  padding: 3px 0px 3px 0px;
+  border-width: 3px 3px 3px 3px;
+  border-radius: 12px 12px 12px 12px;
+  text-align: center;
+  z-index: 4;
+}
+.widget-bbs .widget-bodyDes-bbs .widget-title-bbs {
+  position: relative;
+  background-color: transparent;
+
+  width: fit-content;
+  margin: 0 auto;
+  background-image: linear-gradient(0deg, #ff713e 28%, #ffe465 100%);
+  border-style: solid;
+  border-color: #ff0000;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  border-width: 3px 3px 3px 3px;
+  border-radius: 12px 12px 12px 12px;
+  text-align: center;
+  z-index: 4;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+.widget-bbs .widget-body-bbs .widget-title-bbs h1 {
+  color: #ffffff;
+  font-family: var(--font-banger) !important;
+  font-weight: 500;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+}
+.widget-bbs .widget-bodyDes-bbs .widget-title-bbs h1 {
+  font-size: 24px;
+  color: #000000;
+  font-family: "Arial", Sans-serif;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.widget-bbs .widget-bodyDes-bbs .widget-title-bbs p {
+  color: #000000;
+  font-family: "Arial", Sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6em;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
+.widget-bbs .widget-body-bbs .widget-deskripsi-bbs {
+  margin-top: -20px;
+  padding: 25px 16px 16px 16px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: transparent;
+  line-height: 1.6em;
+  background-image: linear-gradient(190deg, #78b5ff 19%, #ffffff 100%);
+  border-style: solid;
+  border-color: #4676bb;
 }
 
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+.who-widget-bbs {
+  width: 70%;
+  background-image: linear-gradient(#fcb900, #ff6900);
+  padding: 16px;
+  border-radius: 25px 25px 25px 25px;
 }
 
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-}
-
-.center {
+.who-widget-bbs .who-widget-body-bbs {
+  border: solid white;
+  border-radius: 25px 25px 25px 25px;
+  padding: 16px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  padding: 4rem 0;
+  gap: 1rem;
 }
 
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+.who-widget-bbs .who-widget-body-bbs h1 {
+  font-family: var(--font-quicksand) !important;
+  color: #000000;
+  font-family: "Quicksand", Sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.who-widget-bbs .who-widget-body-bbs p {
+  font-size: 17px;
+  line-height: 1.5em;
 }
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
+.risk-widget-bbs {
+  width: 100%;
+  min-height: 500px;
+  border-radius: -25px;
+  background-color: #78b5ff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.center::before,
-.center::after {
-  content: '';
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+.inverted-circle-bbs {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-radius: 0 0 50% 50%;
 }
 
-.logo {
-  position: relative;
-}
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
+.circle-bbs {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  border-radius: 50% 50% 0 0;
 }
 
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
+.risks-wrapper-bbs {
+  width: 70%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-image: radial-gradient(
+    at center center,
+    #1e80c6 66%,
+    #78b5ff 100%
+  );
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
+.risk-card-bbs {
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 16px 16px 16px 16px;
+  border-radius: 20px 20px 20px 20px;
+  border-style: solid;
+  border-color: #125695;
+}
+
+.risk-card-bbs img {
+  border-radius: 100px;
+}
+.risk-card-bbs h1 {
+  color: #f4ff00;
+  text-align: center;
+  font-family: "Arial", Sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.risk-card-bbs p {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--font-quicksand) !important;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.testimoni-card-bbs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 70%;
+  height: fit-content;
+}
+
+.testimoni-card-bbs img {
+  width: 100%;
+  height: auto;
+}
+
+.journey-card-bbs {
+  width: 100%;
+  background-color: #7db3fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Arial", Sans-serif;
+  font-weight: 600;
+}
+.journey-card-bbs img {
+  width: 80% !important;
+}
+.journey-card-bbs h1 {
+  color: #ffffff;
+  font-size: 69px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.journey-card-bbs p {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 2.5;
+}
+
+.journey-card-bbs .inverted-circle-bbs {
+  height: 40px !important;
+}
+
+.promo-card-bbs {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.promo-card-bbs img {
+  width: 80% !important;
+}
+@media only screen and (max-width: 580px) {
+  .image-wrapper-bbs {
+    width: 100% !important;
+  }
+  .medium-image-wrapper-bbs {
+    width: 70% !important;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
+  .widget-bbs .widget-body-bbs,
+  .widget-bbs .widget-bodyDes-bbs {
+    width: 90%;
   }
 
-  .card {
-    padding: 1rem 2.5rem;
+  .widget-bbs .widget-header-bbs {
+    width: 60%;
   }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
+  .who-widget-bbs {
+    width: 90%;
   }
-
-  .center {
-    padding: 8rem 0 6rem;
+  .who-widget-bbs .who-widget-body-bbs img {
+    width: 100%;
+    height: auto;
   }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
+  .risks-wrapper-bbs {
     width: 100%;
   }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
+  .risk-card-bbs img {
+    width: 65% !important;
+    height: auto !important;
   }
 
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
+  .testimoni-card-bbs {
+    width: 100%;
   }
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
+  .journey-card-bbs img {
+    width: 100% !important;
+    height: auto;
   }
 }

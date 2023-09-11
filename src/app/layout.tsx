@@ -1,20 +1,28 @@
 import type { Metadata } from "next";
-import { Inter, Bangers, Quicksand } from "next/font/google";
-
+import { Bangers, Roboto, Quicksand } from "next/font/google";
 import "./globals.css";
+import { Suspense } from "react";
+import { FacebookPixelEvents } from "./component/PixelEvent";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const banger = Bangers({
-  subsets: ["latin"],
-  variable: "--font-banger",
+const banger = Bangers({
   weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-banger",
 });
 
-export const quicksand = Bangers({
-  subsets: ["latin"],
-  variable: "--font-quicksand",
+const quicksand = Quicksand({
   weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-quicksand",
+});
+
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -28,8 +36,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={`${quicksand.variable} ${roboto.variable} ${banger.variable}`}
+    >
+      <body>
+        {children}
+        <Suspense fallback={null}>
+          <FacebookPixelEvents />
+        </Suspense>
+      </body>
     </html>
   );
 }

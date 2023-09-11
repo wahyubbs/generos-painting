@@ -1,0 +1,641 @@
+.container-bbs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.card-bbs {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+  width: 100%;
+}
+
+.card-bbs h1 {
+  color: #2a2d53;
+  font-family: "Arial", Sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
+}
+
+.image-wrapper-bbs,
+.medium-image-wrapper-bbs {
+  display: flex;
+  justify-content: center;
+}
+.image-wrapper-bbs img {
+  max-width: 100%;
+  height: auto;
+}
+.medium-image-wrapper-bbs img {
+  max-width: 100%;
+  height: auto;
+}
+
+.widget-bbs {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.widget-bbs .widget-header-bbs {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.widget-bbs .widget-header-bbs img {
+  width: 390px !important;
+}
+.widget-bbs .widget-body-bbs {
+  margin-top: -40px;
+  width: 70%;
+}
+.widget-bbs .widget-bodyDes-bbs {
+  margin-top: -10px;
+  width: 70%;
+}
+
+.widget-bbs .widget-body-bbs .widget-title-bbs {
+  position: relative;
+  background-color: transparent;
+
+  width: 70%;
+  margin: 0 auto;
+  background-image: radial-gradient(at top right, #ff713e 71%, #ffe465 100%);
+  border-style: solid;
+  border-color: #ff0000;
+  padding: 3px 0px 3px 0px;
+  border-width: 3px 3px 3px 3px;
+  border-radius: 12px 12px 12px 12px;
+  text-align: center;
+  z-index: 4;
+}
+.widget-bbs .widget-bodyDes-bbs .widget-title-bbs {
+  position: relative;
+  background-color: transparent;
+
+  width: fit-content;
+  margin: 0 auto;
+  background-image: linear-gradient(0deg, #ff713e 28%, #ffe465 100%);
+  border-style: solid;
+  border-color: #ff0000;
+  padding: 1rem;
+  border-width: 3px 3px 3px 3px;
+  border-radius: 12px 12px 12px 12px;
+  text-align: center;
+  z-index: 4;
+}
+
+.widget-bbs .widget-body-bbs .widget-title-bbs h1 {
+  color: #ffffff;
+  font-family: var(--font-banger) !important;
+  font-weight: 500;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+}
+.widget-bbs .widget-bodyDes-bbs .widget-title-bbs h1 {
+  font-size: 24px;
+  color: #000000;
+  font-family: "Arial", Sans-serif;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.widget-bbs .widget-bodyDes-bbs .widget-title-bbs p {
+  color: #000000;
+  font-family: "Arial", Sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+.widget-bbs .widget-body-bbs .widget-deskripsi-bbs {
+  margin-top: -20px;
+  padding: 25px 16px 16px 16px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: transparent;
+  line-height: 1.6em;
+  background-image: linear-gradient(190deg, #78b5ff 19%, #ffffff 100%);
+  border-style: solid;
+  border-color: #4676bb;
+}
+
+.who-widget-bbs {
+  width: 70%;
+  background-image: linear-gradient(#fcb900, #ff6900);
+  padding: 16px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.who-widget-bbs .who-widget-body-bbs {
+  border: solid white;
+  border-radius: 25px 25px 25px 25px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.who-widget-bbs .who-widget-body-bbs h1 {
+  font-family: var(--font-quicksand) !important;
+  color: #000000;
+  font-family: var(--font-quicksand), sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.who-widget-bbs .who-widget-body-bbs p {
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+.risk-widget-bbs {
+  width: 100%;
+  min-height: 500px;
+  border-radius: -25px;
+  background-color: #78b5ff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inverted-circle-bbs {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-radius: 0 0 50% 50%;
+}
+
+.circle-bbs {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  border-radius: 50% 50% 0 0;
+}
+
+.risks-wrapper-bbs {
+  width: 70%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-image: radial-gradient(
+    at center center,
+    #1e80c6 66%,
+    #78b5ff 100%
+  );
+}
+
+.risk-card-bbs {
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 16px 16px 16px 16px;
+  border-radius: 20px 20px 20px 20px;
+  border-style: solid;
+  border-color: #125695;
+}
+
+.risk-card-bbs img {
+  border-radius: 100px;
+}
+.risk-card-bbs h1 {
+  color: #f4ff00;
+  text-align: center;
+  font-family: "Arial", Sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.risk-card-bbs p {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--font-quicksand) !important;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.testimoni-card-bbs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 70%;
+  height: fit-content;
+}
+
+.testimoni-card-bbs .w-100 {
+  width: 100%;
+  aspect-ratio: 9/16;
+
+  position: relative;
+}
+
+.testimoni-card-bbs .w-100 img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 9/16;
+  object-fit: fill !important;
+}
+
+.testimoni-card-bbs img {
+  width: 100%;
+  height: auto;
+}
+
+.journey-card-bbs {
+  width: 100%;
+  background-color: #7db3fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Arial", Sans-serif;
+  font-weight: 600;
+}
+
+.journey-card-bbs h1 {
+  color: #ffffff;
+  font-size: 69px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.journey-card-bbs p {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 2.5;
+}
+
+.journey-card-bbs .inverted-circle-bbs {
+  height: 40px !important;
+}
+
+.promo-card-bbs {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.promo-card-bbs ul li {
+  font-family: "Arial", Sans-serif;
+  font-weight: 700;
+}
+
+.promo-card-bbs h1 {
+  color: #0d3566;
+  font-family: "Arial", Sans-serif;
+  font-weight: 900;
+}
+
+.promo-card-bbs span {
+  color: #165ed8;
+  font-size: 69px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.promo-card-bbs p {
+  color: #0d3566;
+  font-family: "Arial", Sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 2.5;
+}
+
+.promo-card-bbs .penawaran-bbs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.promo-card-bbs .btn-promo-bbs {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-family: "Arial", Sans-serif;
+  font-weight: 900;
+  fill: #000000;
+  color: #000000;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #ff9237 0%, #ffe242 100%);
+  border-style: solid;
+  border-color: #e60000;
+  border-radius: 9px 9px 9px 9px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.promo-card-bbs .penawaran-card-bbs {
+  width: 100%;
+
+  background-color: #7db3fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Arial", Sans-serif;
+  font-weight: 600;
+}
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs {
+  padding: 0 2rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  background-color: #0048a1;
+  border-radius: 25px 25px 25px 25px;
+  border-style: solid;
+  border-color: #7bc6ff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs {
+  padding: 0 2rem;
+}
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs img {
+  width: 100% !important;
+}
+
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs h1 {
+  font-size: 21px;
+  text-align: center;
+  color: #ffffff;
+  font-family: var(--font-quicksand), sans-serif;
+  font-weight: 600;
+}
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs h2 {
+  color: #ff8200;
+  text-align: center;
+  font-size: 28px;
+  font-family: var(--font-quicksand), sans-serif;
+  font-weight: 900;
+}
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs h3 {
+  padding: 6px 6px 6px 6px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #ff713e;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-family: var(--font-quicksand), sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs .form-promo-bbs {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 21px 21px 21px 21px;
+  border-radius: 13px 13px 13px 13px;
+  background-color: #ffffff;
+  border-style: dashed;
+  border-color: #ff0000;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s,
+    transform var(2, 0.4s);
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.promo-card-bbs
+  .penawaran-card-bbs
+  .penawaran-widget-bbs
+  .form-promo-bbs
+  input {
+  width: 100%;
+  padding: 7px 10px 7px;
+}
+
+.promo-card-bbs
+  .penawaran-card-bbs
+  .penawaran-widget-bbs
+  .form-promo-bbs
+  input[submit] {
+  cursor: pointer;
+}
+.promo-card-bbs
+  .penawaran-card-bbs
+  .penawaran-widget-bbs
+  .form-promo-bbs
+  input[type="submit"] {
+  background: #81bd4b;
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs .btn-promo-bbs {
+  padding: 0 1.5rem;
+  font-family: "Arial", Sans-serif;
+  font-weight: 900;
+  fill: #000000;
+  color: #000000;
+}
+
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs ul li {
+  line-height: 1.5;
+}
+
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs ul li p {
+  text-align: left;
+  line-height: 1.4;
+  font-size: 17px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs ul li p:first-child {
+  margin-top: 1rem;
+}
+.promo-card-bbs .penawaran-card-bbs .circle-bbs {
+  margin-top: 1rem;
+}
+
+.jaminan-card-bbs {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.jaminan-card-bbs span {
+  color: red;
+}
+.jaminan-card-bbs h1 {
+  color: #003366;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.jaminan-card-bbs h2 {
+  color: #111;
+  text-align: center;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+.jaminan-card-bbs h3 {
+  color: #111;
+  text-align: center;
+  line-height: 1.5;
+
+  font-weight: 400;
+  font-size: 15px;
+}
+.jaminan-card-bbs p {
+  color: #111;
+  text-align: center;
+  line-height: 1.5;
+
+  font-weight: 400;
+  font-size: 15px;
+}
+.jaminan-card-bbs p {
+  color: #111;
+  text-align: center;
+  line-height: 1.5;
+
+  font-weight: 400;
+  font-size: 15px;
+}
+.jaminan-card-bbs a {
+  font-family: "Arial", Sans-serif;
+  font-weight: 500;
+  color: white;
+  background-color: #61ce70;
+  border-style: solid;
+  border-color: #72f185;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
+.footer-bbs {
+  gap: 0 !important;
+}
+
+.info-card-bbs {
+  width: 100%;
+  background-color: #effccb;
+  display: flex;
+  padding: 4rem 10rem;
+  justify-content: center;
+}
+.info-card-bbs div {
+  width: 50%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.info-card-bbs span {
+  color: #000080;
+}
+.info-card-bbs p {
+  text-align: center;
+  font-family: var(--font-roboto);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.copyright-card-bbs {
+  background-color: #17356e;
+  width: 100%;
+  padding: 1rem;
+}
+
+.copyright-card-bbs h1 {
+  color: #ffffff;
+  font-family: "Arial", Sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media only screen and (max-width: 580px) {
+  .image-wrapper-bbs {
+    width: 100% !important;
+  }
+  .medium-image-wrapper-bbs img {
+    max-width: 70% !important;
+  }
+
+  .widget-bbs .widget-body-bbs,
+  .widget-bbs .widget-bodyDes-bbs {
+    width: 90%;
+  }
+
+  .widget-bbs .widget-header-bbs {
+    width: 60%;
+  }
+  .who-widget-bbs {
+    width: 90%;
+  }
+  .who-widget-bbs .who-widget-body-bbs img {
+    width: 100%;
+    height: auto;
+  }
+  .risks-wrapper-bbs {
+    width: 100%;
+  }
+  .risk-card-bbs img {
+    width: 65% !important;
+    height: auto !important;
+  }
+
+  .testimoni-card-bbs {
+    width: 100%;
+  }
+  .journey-card-bbs img {
+    width: 100% !important;
+    height: auto;
+  }
+  .promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs {
+    width: 90% !important;
+    padding: 2rem;
+  }
+  .info-card-bbs {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 1rem;
+    justify-content: flex-start;
+  }
+  .info-card-bbs div {
+    gap: 1rem;
+    width: 100%;
+  }
+  .copyright-card-bbs h1 {
+    font-size: 15px;
+  }
+}

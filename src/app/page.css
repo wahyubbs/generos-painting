@@ -294,6 +294,10 @@
   align-items: center;
   gap: 1rem;
 }
+
+.promo-card-bbs .form {
+  width: 50%;
+}
 .promo-card-bbs ul li {
   font-family: "Arial", Sans-serif;
   font-weight: 700;
@@ -619,6 +623,9 @@
   .journey-card-bbs img {
     width: 100% !important;
     height: auto;
+  }
+  .promo-card-bbs .form {
+    width: 90%;
   }
   .promo-card-bbs .penawaran-card-bbs .penawaran-widget-bbs {
     width: 90% !important;

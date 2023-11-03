@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { ReactPixelTrack } from "./reactPixel";
 import Form from "./Form";
+import { getForm } from "../api/getForm";
 
-function Section8() {
+async function Section8() {
   const promo1Img = "/img/promo1.png";
   const promo2Img = "/img/promo2.webp";
   const tanpaSyarat = "/img/tanpaSyarat.gif";
@@ -12,6 +12,7 @@ function Section8() {
   const panahBawah = "/img/panahBawah.gif";
   const ambilPromo = "/img/ambilPromo.webp";
   const pastikanNomor = "/img/pastikanNomor.gif";
+  const formElement = await getForm();
   return (
     <section className="card-bbs">
       <div className="promo-card-bbs">
@@ -112,7 +113,7 @@ function Section8() {
             </a>
             <h2>MAU DAPAT PROMO & BAYAR SETELAH PAKET SAMPAI?</h2>
             <h3>Isi Form Untuk Dapatkan Antrian Promo Terbatas</h3>
-            <Form />
+            <Form formElement={formElement} />
             <div className="image-wrapper-bbs">
               <Image
                 width={1060}
